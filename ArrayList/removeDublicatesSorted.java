@@ -10,13 +10,11 @@ public class removeDublicatesSorted{
         List<Integer> list = new ArrayList<>();
 
         //Edge Case if the array is null and empty
-
         if(arr == null || arr.length == 0){
             return list;
         }
 
         // add the first element that is always unique
-
         list.add(arr[0]);
 
         for(int i = 1 ; i < arr.length ; i++){

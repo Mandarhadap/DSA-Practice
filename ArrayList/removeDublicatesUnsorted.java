@@ -1,6 +1,7 @@
 package ArrayList;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -12,7 +13,8 @@ public class removeDublicatesUnsorted{
             return new ArrayList<>();
         }
 
-        //Linked hash set preserves the insertion order
+        //LinkedHashSet preserves the insertion order
+        //If you want sorted then you can use HashSet
         Set<Integer> set = new LinkedHashSet<>();
 
         for(int num : arr){
